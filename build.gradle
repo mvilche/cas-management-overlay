@@ -26,6 +26,12 @@ apply plugin: "org.springframework.boot"
 apply plugin: "eclipse"
 apply plugin: "idea"
 
+dependencies {
+    // Other CAS dependencies/modules may be listed here...
+    compile "org.apereo.cas:cas-server-support-redis-service-registry:${project.'cas.version'}"
+    
+}
+
 eclipse {
     classpath {
        downloadSources = true
